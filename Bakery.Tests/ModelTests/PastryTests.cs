@@ -14,5 +14,22 @@ namespace Bakery.Tests
       Pastry addPastry = new Pastry(1,2);
       Assert.AreEqual(typeof(Pastry), addPastry.GetType());
     }
+
+    [TestMethod]
+    public void PastryPrice_ReturnPriceOfPastry_Int()
+    {
+      Pastry addPastry0 = new Pastry(0,0);
+      Pastry addPastry1 = new Pastry(1,2);
+      Pastry addPastry2 = new Pastry(2,4);
+      Pastry addPastry3 = new Pastry(3,5);
+      Pastry addPastry4 = new Pastry(4,7);
+      Pastry addPastry5 = new Pastry(5,9);
+      Assert.AreEqual(0, addPastry0.PastryPrice());
+      Assert.AreEqual(2, addPastry0.PastryPrice());
+      Assert.AreEqual(4, addPastry0.PastryPrice());
+      Assert.AreEqual(5, addPastry0.PastryPrice());
+      Assert.AreEqual(7, addPastry0.PastryPrice());
+      Assert.AreEqual(9, addPastry0.PastryPrice());
+    }     
   }  
 }  
