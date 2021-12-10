@@ -1,1 +1,2 @@
-10:00 -12:00: research auto implemented properties, try to get second test working
+10:00 -11:30: research auto implemented properties, try to get second test working
+11:30 - 12:00 work on structuring better second test

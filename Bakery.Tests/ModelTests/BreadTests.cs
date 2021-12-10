@@ -16,13 +16,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-
-    public void BreadPrice_ReturnBreadPrice_Int();
-    {
-      int breadInput = 1;
-      Bread testBread = new Bread(1,5);
-    }
-
-
+    
+    public void BreadPrice_
   }
 }
