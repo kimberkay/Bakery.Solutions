@@ -20,7 +20,7 @@ namespace Bakery.Models
       int Price = Quantity * 5;
       if (Quantity > 2 & Price % 3 == 0)
       {
-        Price = (Quantity * 5) - ((Quantity/3)*5); 
+        Price = (Quantity * 5) - ((Quantity/3)*5 - (Quantity % 2)*5); 
         return Price;
       }
       else
