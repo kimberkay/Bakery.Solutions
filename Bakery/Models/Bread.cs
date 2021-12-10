@@ -6,16 +6,16 @@ namespace Bakery.Models
   
   public class Bread
   {
-    public int _quantity; 
-    public int _price;
+    public int Quantity { get; set; }
+    public int Price { get; set; }
 
     public Bread(int qty, int price)
     {
-      _quantity = qty;
-      _price = price;
+      Quantity = qty;
+      Price = price;
     }
 
-    public static int BreadPrice()
+    public int BreadPrice()
     {    
       return 0;
     }

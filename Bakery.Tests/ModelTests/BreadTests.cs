@@ -1,7 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 using Bakery.Models;
-using System;
+
 
 namespace Bakery.Tests
 {
@@ -18,11 +17,10 @@ namespace Bakery.Tests
 
     [TestMethod]
 
-    public void CalculateBreadPrice_ReturnsPriceOfBread_Int();
+    public void BreadPrice_ReturnBreadPrice_Int();
     {
-      int breadCount = 1;
+      int breadInput = 1;
       Bread testBread = new Bread(1,5);
-      Assert.AreEqual(typeof(Bread), testBread.BreadPrice(5));
     }
 
 
