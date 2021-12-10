@@ -5,5 +5,15 @@ using System;
 
 namespace Bakery.Tests
 {
+  [TestClass]
+  public class BreadTests
+  {
 
+    [TestMethod]
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
+    {
+      Bread addBread = new Bread(1,5);
+      Assert.AreEqual(typeof(Bread), addBread.GetType());
+    }
+  }
 }
