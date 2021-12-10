@@ -17,7 +17,7 @@ namespace Bakery.Models
 
     public static int BreadPrice()
     {    
-      return
+      return 0;
     }
   }
 }
