@@ -17,7 +17,15 @@ namespace Bakery.Models
 
     public int BreadPrice()
     {    
-      return 0;
-    }
+      if (Quantity == 0)
+      {
+        return Price = 0;
+      }
+      else
+      {
+        return 0;
+      }
+      
+    }    
   }
 }
