@@ -25,11 +25,11 @@ namespace Bakery.Tests
       Pastry addPastry4 = new Pastry(4,7);
       Pastry addPastry5 = new Pastry(5,9);
       Assert.AreEqual(0, addPastry0.PastryPrice());
-      Assert.AreEqual(2, addPastry0.PastryPrice());
-      Assert.AreEqual(4, addPastry0.PastryPrice());
-      Assert.AreEqual(5, addPastry0.PastryPrice());
-      Assert.AreEqual(7, addPastry0.PastryPrice());
-      Assert.AreEqual(9, addPastry0.PastryPrice());
+      Assert.AreEqual(2, addPastry1.PastryPrice());
+      Assert.AreEqual(4, addPastry2.PastryPrice());
+      Assert.AreEqual(5, addPastry3.PastryPrice());
+      Assert.AreEqual(7, addPastry4.PastryPrice());
+      Assert.AreEqual(9, addPastry5.PastryPrice());
     }     
   }  
 }  
