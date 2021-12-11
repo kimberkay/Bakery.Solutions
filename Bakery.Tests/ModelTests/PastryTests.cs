@@ -24,6 +24,7 @@ namespace Bakery.Tests
       Pastry addPastry3 = new Pastry(3,5);
       Pastry addPastry4 = new Pastry(4,7);
       Pastry addPastry5 = new Pastry(5,9);
+      Pastry addPastry6 = new Pastry(24, 40);
       Assert.AreEqual(0, addPastry0.PastryPrice());
       Assert.AreEqual(2, addPastry1.PastryPrice());
       Assert.AreEqual(4, addPastry2.PastryPrice());
