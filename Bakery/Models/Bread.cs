@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace Bakery.Models
 {
-  
   public class Bread
   {
     public int Quantity { get; set; }
@@ -18,20 +17,32 @@ namespace Bakery.Models
     public int BreadPrice()
     {    
       int Price = Quantity * 5;
-      if (Quantity <= 3 & Quantity % 3 == 0)
+      if (Quantity == 3)
       {
         Price = (Quantity * 5) - ((Quantity/3)*5); 
         return Price;
       }
-      else if (Quantity > 4 & Price % 3 > 0)
+      else if (Quantity > 4 & Quantity % 3 > 0)
       { 
        Price = ((Quantity * 5) - (Quantity / 3 * 5)); 
         return Price;
       }
       else
       {
-          return Price;
+        return Price;
       }
-    }   
-  }    
-}
+    }
+    
+    public string Loaf()
+    {
+      if (Quantity > 1)
+      {
+        return "loaves";
+      }
+      else
+      {
+        return "loaf";
+      }
+    }
+  } 
+}  

@@ -94,3 +94,6 @@
 /Users/kimbrannian/Desktop/Bakery.Solutions/Bakery.Tests/obj/Debug/net5.0/ref/Bakery.Tests.dll
 /Users/kimbrannian/Desktop/Bakery.Solutions/Bakery.Tests/obj/Debug/net5.0/Bakery.Tests.pdb
 /Users/kimbrannian/Desktop/Bakery.Solutions/Bakery.Tests/obj/Debug/net5.0/Bakery.Tests.genruntimeconfig.cache
+/Users/kimbrannian/Desktop/Bakery.Solutions/Bakery.Tests/bin/Debug/net5.0/Bakery.deps.json
+/Users/kimbrannian/Desktop/Bakery.Solutions/Bakery.Tests/bin/Debug/net5.0/Bakery.runtimeconfig.json
+/Users/kimbrannian/Desktop/Bakery.Solutions/Bakery.Tests/bin/Debug/net5.0/Bakery.runtimeconfig.dev.json

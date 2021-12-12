@@ -16,7 +16,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void PastryPrice_ReturnPriceOfPastry_Int()
+    public void PastryTotal_ReturnPriceOfPastry_Int()
     {
       Pastry addPastry0 = new Pastry(0,0);
       Pastry addPastry1 = new Pastry(1,2);
@@ -27,12 +27,12 @@ namespace Bakery.Tests
       Pastry addPastry6 = new Pastry(24, 40);
       Pastry addPastry7 = new Pastry(21, 35);
       Pastry addPastry8 = new Pastry(10, 18);
-      Assert.AreEqual(0, addPastry0.PastryPrice());
-      Assert.AreEqual(2, addPastry1.PastryPrice());
-      Assert.AreEqual(4, addPastry2.PastryPrice());
-      Assert.AreEqual(5, addPastry3.PastryPrice());
-      Assert.AreEqual(7, addPastry4.PastryPrice());
-      Assert.AreEqual(9, addPastry5.PastryPrice());
+      Assert.AreEqual(0, addPastry0.PastryTotal());
+      Assert.AreEqual(2, addPastry1.PastryTotal());
+      Assert.AreEqual(4, addPastry2.PastryTotal());
+      Assert.AreEqual(5, addPastry3.PastryTotal());
+      Assert.AreEqual(7, addPastry4.PastryTotal());
+      Assert.AreEqual(9, addPastry5.PastryTotal());
     }     
   }  
 }  
