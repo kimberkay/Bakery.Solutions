@@ -28,6 +28,15 @@ namespace Bakery.Tests
       Assert.AreEqual(10, addBread2.BreadPrice());
       Assert.AreEqual(10, addBread3.BreadPrice());
       Assert.AreEqual(25, addBread4.BreadPrice()); 
-    }     
+    }  
+
+    [TestMethod]
+    public void Pastries_ReturnPastryOrPastries_String()   
+    {
+      Bread addBread1 = new Bread(1,5);
+      Bread addBread2 = new Bread(2,10);
+      Assert.AreEqual("loaf", addBread1.Loaf());
+      Assert.AreEqual("loaves", addBread2.Loaf());
+    }   
   }
 }
