@@ -29,7 +29,7 @@ namespace Bakery.Models
       }
       else
       {
-          return PastryPrice;
+          return PastryPrice = PastryQuantity * 2;
       }
     } 
 
