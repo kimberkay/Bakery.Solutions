@@ -17,20 +17,22 @@ namespace Bakery.Models
 
     public int PastryTotal()
     {    
-      if (PastryQuantity == 3)
+      int thirdPastry = 0;
+      if (PastryQuantity < 3)
       {
-        PastryPrice = 5;
-        return PastryPrice;
+         return PastryPrice = PastryQuantity * 2;
       }
-      else if (PastryQuantity > 3 & PastryQuantity % 3 > 0)
-      { 
-       PastryPrice = ((PastryQuantity * 2) - (PastryQuantity/3)); 
-        return PastryPrice;
-      }
-      else
+          else
       {
-          return PastryPrice = PastryQuantity * 2;
+        for (int i = 1; i <= PastryQuantity; i++)
+        {
+        if (i % 3 == 0)
+        {
+          thirdPastry ++;
+        }  
       }
+       return PastryPrice = (PastryQuantity * 2) - thirdPastry;
+      } 
     } 
 
     public string Pastries()

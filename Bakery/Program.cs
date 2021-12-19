@@ -30,7 +30,16 @@ public class Program
       Console.WriteLine("Your Total for today is:");
       Console.WriteLine("-  $" + (addBread.BreadPrice() + addPastry.PastryTotal()) + ".00  -" );
       Console.WriteLine("----------------------------------------------------");
-    
+      Console.WriteLine("Would you like to add another order? Enter 'Y' for yes or 'N' for no.");
+      string yesOrNo = Console.ReadLine().ToLower();
+      if (yesOrNo == "y") 
+      {
+        Main();
+      }  
+      else
+      {
+        Console.WriteLine("Thank you! Have a nice day :)");
+      }
      
 
 

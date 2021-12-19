@@ -16,22 +16,23 @@ namespace Bakery.Models
 
     public int BreadPrice()
     {    
-      int Price = Quantity * 5;
-      if (Quantity == 3)
+      int freeBread = 0;
+      if (Quantity < 3)
       {
-        Price = (Quantity - (Quantity/3)) * 5; 
-        return Price;
+         return Price = Quantity * 5;
       }
-      else if (Quantity > 4 & Quantity % 3 > 0)
-      { 
-       Price = (Quantity - (Quantity / 3)) * 5; 
-        return Price;
-      }
-      else
+          else
       {
-        return Price;
+        for (int i = 1; i <= Quantity; i++)
+        {
+        if (i % 3 == 0)
+        {
+          freeBread ++;
+        }  
       }
-    }
+       return Price = (Quantity - freeBread) * 5;
+      } 
+    }  
     
     public string Loaf()
     {
